@@ -196,7 +196,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you find this integration useful, consider supporting development:
 
-[!["Buy Me A Coffee"](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow.svg)](https://buymeacoffee.com/)
+[!["Buy Me A Coffee"](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow.svg)](https://buymeacoffee.com/msdat)
 
 If you encounter issues:
 1. Check the [Issues](../../issues) page
