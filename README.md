@@ -1,7 +1,8 @@
 # Nordkapp Heater - Home Assistant Integration
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
-[![License](https://img.shields.io/github/license/netresearch-digital/nordkapp_heater.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/release/MSDATDE/nordkapp_heater.svg)](https://github.com/MSDATDE/nordkapp_heater/releases)
+[![License](https://img.shields.io/github/license/MSDATDE/nordkapp_heater.svg)](LICENSE)
 
 Control your Nordkapp / HeatGenie diesel heater from Home Assistant via Bluetooth.
 
