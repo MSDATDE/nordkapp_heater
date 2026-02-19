@@ -1,0 +1,106 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nordkapp Heater",
+        "description": "Geben Sie die BLE-MAC-Adresse Ihrer Heizung ein (z.B. C1:01:7B:E7:FE:73)",
+        "data": {
+          "address": "MAC-Adresse"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Nordkapp Heater",
+        "description": "Heizung gefunden: {name}. Best\u00e4tigen Sie, um hinzuzuf\u00fcgen."
+      }
+    },
+    "error": {
+      "invalid_mac": "Ung\u00fcltiges MAC-Adressformat"
+    },
+    "abort": {
+      "already_configured": "Diese Heizung ist bereits konfiguriert"
+    }
+  },
+  "entity": {
+    "climate": {
+      "heater": {
+        "name": "Heizung",
+        "state_attributes": {
+          "preset_mode": {
+            "state": {
+              "auto": "Automatik",
+              "manual": "Manuell",
+              "start_stop": "Start-Stop"
+            }
+          }
+        }
+      }
+    },
+    "fan": {
+      "gear": {
+        "name": "Gangstufe"
+      }
+    },
+    "switch": {
+      "power": {
+        "name": "Strom"
+      }
+    },
+    "sensor": {
+      "ambient_temp": {
+        "name": "Umgebungstemperatur"
+      },
+      "shell_temp": {
+        "name": "Geh\u00e4usetemperatur"
+      },
+      "voltage": {
+        "name": "Batteriespannung"
+      },
+      "fan_rpm": {
+        "name": "L\u00fcfterdrehzahl"
+      },
+      "pump_freq": {
+        "name": "Pumpenfrequenz"
+      },
+      "heater_state": {
+        "name": "Heizungsstatus"
+      },
+      "error_code": {
+        "name": "Fehlercode"
+      },
+      "altitude": {
+        "name": "H\u00f6he"
+      },
+      "target_temp": {
+        "name": "Zieltemperatur"
+      },
+      "gear_level": {
+        "name": "Gangstufe"
+      }
+    },
+    "binary_sensor": {
+      "running": {
+        "name": "In Betrieb"
+      },
+      "error_active": {
+        "name": "Fehler"
+      },
+      "glow_plug": {
+        "name": "Gl\u00fchkerze"
+      },
+      "pump_active": {
+        "name": "Pumpe"
+      },
+      "fan_active": {
+        "name": "L\u00fcfter"
+      }
+    },
+    "button": {
+      "clear_error": {
+        "name": "Fehler l\u00f6schen"
+      },
+      "ventilation": {
+        "name": "L\u00fcftung"
+      }
+    }
+  }
+}

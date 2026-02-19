@@ -1,0 +1,15 @@
+{
+  "domain": "nordkapp_heater",
+  "name": "Nordkapp Heater",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["bluetooth"],
+  "documentation": "https://github.com/smajchrzak/nordkapp_heater",
+  "iot_class": "local_polling",
+  "bluetooth": [
+    {
+      "service_uuid": "0000181a-0000-1000-8000-00805f9b34fb"
+    }
+  ],
+  "version": "1.0.0"
+}

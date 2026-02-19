@@ -1,0 +1,106 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nordkapp Heater",
+        "description": "Enter the BLE MAC address of your heater (e.g. C1:01:7B:E7:FE:73)",
+        "data": {
+          "address": "MAC address"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Nordkapp Heater",
+        "description": "Found heater: {name}. Confirm to add."
+      }
+    },
+    "error": {
+      "invalid_mac": "Invalid MAC address format"
+    },
+    "abort": {
+      "already_configured": "This heater is already configured"
+    }
+  },
+  "entity": {
+    "climate": {
+      "heater": {
+        "name": "Heater",
+        "state_attributes": {
+          "preset_mode": {
+            "state": {
+              "auto": "Auto",
+              "manual": "Manual",
+              "start_stop": "Start-Stop"
+            }
+          }
+        }
+      }
+    },
+    "fan": {
+      "gear": {
+        "name": "Gear level"
+      }
+    },
+    "switch": {
+      "power": {
+        "name": "Power"
+      }
+    },
+    "sensor": {
+      "ambient_temp": {
+        "name": "Ambient temperature"
+      },
+      "shell_temp": {
+        "name": "Shell temperature"
+      },
+      "voltage": {
+        "name": "Battery voltage"
+      },
+      "fan_rpm": {
+        "name": "Fan speed"
+      },
+      "pump_freq": {
+        "name": "Pump frequency"
+      },
+      "heater_state": {
+        "name": "Heater state"
+      },
+      "error_code": {
+        "name": "Error code"
+      },
+      "altitude": {
+        "name": "Altitude"
+      },
+      "target_temp": {
+        "name": "Target temperature"
+      },
+      "gear_level": {
+        "name": "Gear level"
+      }
+    },
+    "binary_sensor": {
+      "running": {
+        "name": "Running"
+      },
+      "error_active": {
+        "name": "Error"
+      },
+      "glow_plug": {
+        "name": "Glow plug"
+      },
+      "pump_active": {
+        "name": "Pump"
+      },
+      "fan_active": {
+        "name": "Fan"
+      }
+    },
+    "button": {
+      "clear_error": {
+        "name": "Clear error"
+      },
+      "ventilation": {
+        "name": "Ventilation"
+      }
+    }
+  }
+}

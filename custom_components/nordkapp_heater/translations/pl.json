@@ -1,0 +1,106 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nordkapp Heater",
+        "description": "Podaj adres MAC BLE nagrzewnicy (np. C1:01:7B:E7:FE:73)",
+        "data": {
+          "address": "Adres MAC"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Nordkapp Heater",
+        "description": "Znaleziono nagrzewnic\u0119: {name}. Potwierd\u017a, aby doda\u0107."
+      }
+    },
+    "error": {
+      "invalid_mac": "Nieprawid\u0142owy format adresu MAC"
+    },
+    "abort": {
+      "already_configured": "Ta nagrzewnica jest ju\u017c skonfigurowana"
+    }
+  },
+  "entity": {
+    "climate": {
+      "heater": {
+        "name": "Nagrzewnica",
+        "state_attributes": {
+          "preset_mode": {
+            "state": {
+              "auto": "Automatyczny",
+              "manual": "R\u0119czny",
+              "start_stop": "Start-Stop"
+            }
+          }
+        }
+      }
+    },
+    "fan": {
+      "gear": {
+        "name": "Poziom biegu"
+      }
+    },
+    "switch": {
+      "power": {
+        "name": "Zasilanie"
+      }
+    },
+    "sensor": {
+      "ambient_temp": {
+        "name": "Temperatura otoczenia"
+      },
+      "shell_temp": {
+        "name": "Temperatura obudowy"
+      },
+      "voltage": {
+        "name": "Napi\u0119cie akumulatora"
+      },
+      "fan_rpm": {
+        "name": "Pr\u0119dko\u015b\u0107 wentylatora"
+      },
+      "pump_freq": {
+        "name": "Cz\u0119stotliwo\u015b\u0107 pompy"
+      },
+      "heater_state": {
+        "name": "Stan nagrzewnicy"
+      },
+      "error_code": {
+        "name": "Kod b\u0142\u0119du"
+      },
+      "altitude": {
+        "name": "Wysoko\u015b\u0107"
+      },
+      "target_temp": {
+        "name": "Temperatura docelowa"
+      },
+      "gear_level": {
+        "name": "Poziom biegu"
+      }
+    },
+    "binary_sensor": {
+      "running": {
+        "name": "Praca"
+      },
+      "error_active": {
+        "name": "B\u0142\u0105d"
+      },
+      "glow_plug": {
+        "name": "\u015awiecka \u017carowa"
+      },
+      "pump_active": {
+        "name": "Pompa"
+      },
+      "fan_active": {
+        "name": "Wentylator"
+      }
+    },
+    "button": {
+      "clear_error": {
+        "name": "Wyczy\u015b\u0107 b\u0142\u0105d"
+      },
+      "ventilation": {
+        "name": "Wentylacja"
+      }
+    }
+  }
+}

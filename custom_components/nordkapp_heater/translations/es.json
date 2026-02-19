@@ -1,0 +1,106 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nordkapp Heater",
+        "description": "Introduzca la direcci\u00f3n MAC BLE de su calefactor (ej. C1:01:7B:E7:FE:73)",
+        "data": {
+          "address": "Direcci\u00f3n MAC"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Nordkapp Heater",
+        "description": "Calefactor encontrado: {name}. Confirme para a\u00f1adir."
+      }
+    },
+    "error": {
+      "invalid_mac": "Formato de direcci\u00f3n MAC no v\u00e1lido"
+    },
+    "abort": {
+      "already_configured": "Este calefactor ya est\u00e1 configurado"
+    }
+  },
+  "entity": {
+    "climate": {
+      "heater": {
+        "name": "Calefactor",
+        "state_attributes": {
+          "preset_mode": {
+            "state": {
+              "auto": "Autom\u00e1tico",
+              "manual": "Manual",
+              "start_stop": "Start-Stop"
+            }
+          }
+        }
+      }
+    },
+    "fan": {
+      "gear": {
+        "name": "Nivel de marcha"
+      }
+    },
+    "switch": {
+      "power": {
+        "name": "Encendido"
+      }
+    },
+    "sensor": {
+      "ambient_temp": {
+        "name": "Temperatura ambiente"
+      },
+      "shell_temp": {
+        "name": "Temperatura de carcasa"
+      },
+      "voltage": {
+        "name": "Voltaje de bater\u00eda"
+      },
+      "fan_rpm": {
+        "name": "Velocidad del ventilador"
+      },
+      "pump_freq": {
+        "name": "Frecuencia de bomba"
+      },
+      "heater_state": {
+        "name": "Estado del calefactor"
+      },
+      "error_code": {
+        "name": "C\u00f3digo de error"
+      },
+      "altitude": {
+        "name": "Altitud"
+      },
+      "target_temp": {
+        "name": "Temperatura objetivo"
+      },
+      "gear_level": {
+        "name": "Nivel de marcha"
+      }
+    },
+    "binary_sensor": {
+      "running": {
+        "name": "En funcionamiento"
+      },
+      "error_active": {
+        "name": "Error"
+      },
+      "glow_plug": {
+        "name": "Buj\u00eda de precalentamiento"
+      },
+      "pump_active": {
+        "name": "Bomba"
+      },
+      "fan_active": {
+        "name": "Ventilador"
+      }
+    },
+    "button": {
+      "clear_error": {
+        "name": "Borrar error"
+      },
+      "ventilation": {
+        "name": "Ventilaci\u00f3n"
+      }
+    }
+  }
+}
